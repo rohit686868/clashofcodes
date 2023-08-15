@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash</title>
+    <style>
+        @font-face {
+    font-family:'jod' ;
+    src: url(font/Clash-Light.ttf);
+
+}
+
+
+#img{
+    width: 90%;
+    height: 200px;
+    object-fit: scale-down;
+    
+}
+.background
+{
+    
+    position: absolute;
+   
+    left: 0px;
+    top: 0px;
+    
+    
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+   
+}
+.hello{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+.image1{
+
+
+ text-align: center;
+  
+    margin-bottom: 4rem;
+}
+.text{
+    color: white;
+    text-align: center;
+    font-family: 'jod',sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+ 
+
+}
+span{
+    font-size: large;
+}
+#text_title{
+    font-size: 58px;
+}
+#text_title2{
+    font-size: x-large;
+}
+@media only screen and (max-width:600px) {
+    .background{
+       height: 100%;
+       width: 100%;
+        object-fit: cover;
+        
+    }
+  #text_title{
+    font-size: 40px;
+  }
+  .image1{
+    margin-bottom: 0.75rem;
+  }
+}
+
+
+/*Button */
+.btn
+{
+    display: flex;
+    
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+a {
+    font-family: 'jod',sans-serif;
+    position: relative;
+  
+    font-weight: 700;
+letter-spacing: 1px;
+    font-size: 1.3rem;
+max-width: 140px;
+text-decoration: none;
+border-radius: 4px;
+padding: 20px 30px;
+transition: 1s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+}
+a.button {
+color: wheat;
+box-shadow: #2E0B36 0 0 0 40px inset;
+}
+
+a.button:hover {
+color: #fff;
+box-shadow: black 0 0 0 40px inset;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+    </style>
+</head>
+<body>
+<div class="hello">
+    <section>
+        <img class="background" src="images/7.jpg" alt="Aleq">
+    <div class="image1">
+        <img src="images\coc44.png" alt="" id="img">
+    </div>
+    <p></p>
+    <div class="text">
+        
+        <span id="text_title">Poised for an Exciting Event ?</span> 
+        <p></p>
+        <span id="text_title2">Assemble your Clan and get ready for some Code Clash</span> 
+        <p></p>
+       
+        <p></p>
+        
+        <p></p>
+       
+        
+    </div>
+    <div class="btn">
+        <a href="../clashofcodes/clashofcodes/index.php" class="button" id="btn1">REGISTER</a>
+       
+        <a href="about.html" class="button">RULES</a>
+    </div>
+    
+</section>
+
+</div>
+
+</body>
+
+</html>
